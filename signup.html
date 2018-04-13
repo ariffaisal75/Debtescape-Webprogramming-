@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Your Financial Management Solution</title>
+	<link rel="stylesheet" href="bootstrap.css">
+	<link rel="stylesheet"
+href=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css>
+<script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js>
+</script>
+<style type="text/css">
+body{
+font-family : verdana;
+background: #F0F8FF;
+}
+
+
+footer{
+margin-top : 0px;
+background : #696969;
+color: 		#f4f4f4;
+font-family : verdana;
+font-size : 14px;
+min-height : 250px;
+}
+
+
+.nav-pills {
+    color: white;    
+	background-color: #3CB371;
+}
+
+.nav-link{
+color: #f4f4f4;
+font-family : agency fb;
+
+font-size : 16pt;
+}
+
+
+nav{
+	background-color :#3CB371;
+}
+.btn-info{
+background-color: #ec624f;
+font-family : agency fb;
+font-size : 13pt;
+}
+
+.btn-info:hover {
+  background-color: #ee8d80;
+  font-family : agency fb;
+  font-size : 13pt;
+}
+
+.btn-primary{
+background-color: #ec624f;
+font-family : verdana;
+font-size : 13pt;
+border-color: #ec624f;
+margin-right : auto;
+margin-left : auto ;
+}
+
+.btn-primary:hover {
+  background-color: #ee8d80;
+  font-family : verdana;
+  font-size : 13pt;
+  border-color: #ee8d80;
+}
+
+.btn-secondary{
+background-color: #6a9597;
+font-family : verdana;
+font-size : 13pt;
+border-color:#536b67;
+}
+
+.btn-secondary:hover {
+  background-color: #536b67;
+  font-family : verdana;
+  font-size : 13pt;
+  border-color: #536b67;
+  color : #e6e6e6;
+}
+
+.titletext{
+
+color : #20d06e;
+}
+
+.carousel-caption {
+    top: 260px;
+    bottom: auto;
+}
+
+.jumbotron {
+color: white;
+background-color : #6a9597;
+}
+
+.jumbotron-fluid{
+padding-top: 15px;}
+
+.container{
+background-color : white ;
+margin-top : 1%;
+margin-left : auto;
+margin-right : auto;
+min-width :0px;
+max-width : 650px;
+margin-bottom : 12%;
+padding-top : 30px;
+padding-bottom : 50px;
+
+
+}
+
+.container-fluid {
+background-color : white;}
+
+.card-title{
+color : #20d06e;
+}
+
+.carousel{
+padding-bottom : 15px;
+}
+
+.pad{
+padding-left : auto;
+padding-right : auto;
+margin-left : auto;
+margin-right : auto;
+}
+
+.form-group{
+margin-left : 20%;
+margin-right : 20%;
+padding-top : 5%;
+}
+
+</style>
+
+<script>
+$("#myCarousel").carousel();
+
+// Enable Carousel Indicators
+$(".item").click(function(){
+    $("#myCarousel").carousel(1);
+});
+
+// Enable Carousel Controls
+$(".left").click(function(){
+    $("#myCarousel").carousel("prev");
+});
+</script>
+</head>
+<body>
+	
+	<header>
+	<div class="header">
+  <!--<h1>JavaJam Coffee House</h1>-->
+</div>
+	
+	</header>
+	
+
+
+<main>
+<a href="index.html">
+<img src="logo dark.png" alt="logo" class="center-block" style="margin-top:4%; max-width : 150px;"/>
+</a>
+
+<div class="container">
+<form>
+  <div class="form-group">
+    <label for="username">Username</label>
+    <input type="text" class="form-control" id="username" placeholder="Username">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Confirm Password</label>
+    <input type="password" class="form-control" aria-describedby="confirm Des" id="exampleInputPassword1" placeholder="Password">
+	<small id="confirm Des" class="form-text text-muted">Make sure the password is the same as the one you entered above</small>
+  </div>
+
+  <button type="submit" class="btn btn-primary center-block">Submit</button>
+</form>
+<br>
+<center><p>Already have an account?<a href="login.html"> Click here</a><p></center>
+</div>
+
+</main>
+
+
+	<footer>
+	<img src="download.png" alt="logo" class="center-block" style="margin-top:4%; max-width : 150px;"/>
+	<br><center>Copyright &copy; Debtscape
+			</center>
+	</footer>
+	
+</body>
+</html>

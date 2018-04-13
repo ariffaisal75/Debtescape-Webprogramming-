@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Profile</title>
+		
+        <!--fontawesome icon-->
+		<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+         <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="style4.css">
+		
+		<style type="text/css">
+		
+.btn-info {
+  color: #fff;
+  background-color: #ec624f;
+  border-color:#ec624f;
+}
+
+.btn-info:hover {
+  color: #fff;
+  background-color: #ec624f;
+  border-color:#ec624f;
+}
+
+.btn-info.disabled, .btn-info:disabled {
+  color: #fff;
+  background-color: #ec624f;
+  border-color: #ec624f;
+}
+
+.btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active,
+.show > .btn-info.dropdown-toggle {
+  color: #fff;
+  background-color: #ec624f;
+  border-color: #ec624f;
+}
+
+.btn-info:focus, .btn-info.focus {
+  box-shadow: 0 0 0 0.2rem rgba(77, 77, 77, 0.5);
+}
+
+.btn-info:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):not(.disabled).active:focus,
+.show > .btn-info.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(77, 77, 77, 0.5);
+}
+
+#users {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#users td, #users th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#users tr:nth-child(even){background-color: #f2f2f2;}
+
+#users tr:hover {background-color: #ddd;}
+
+#users th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+</style>
+    </head>
+    <body>
+
+
+
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+		
+                        <nav id="sidebar">
+			 
+                <div class="sidebar-header">
+                    <h3><img src="logo light.png" alt="logo" style=" max-width : 150px;" class="center-block"/> </h3> <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn center-block">
+                                <i class="glyphicon glyphicon-menu-hamburger"></i>
+                                <span></span>
+                            </button>
+                   
+                </div>
+
+                <ul class="list-unstyled components">
+                     <li>
+                        <a href="Report.html">
+                            <i class="glyphicon glyphicon-stats"></i>
+                            Track
+                        </a>
+                    </li>
+                    <li >
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-certificate"></i>
+                            Goal
+                        </a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li><a href="addGoal.html">Add Goal</a></li>
+                            <li><a href="viewGoal.html">View Goals</a></li>
+                        </ul>
+                    </li >
+                    <li class="active">
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-pencil"></i>
+                            Update
+                        </a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li><a href="daily.html">Manage Daily Expenses</a></li>
+                            <li class="active"><a href="view.html">View Daily Expenses</a></li>
+                        </ul>
+                    </li>
+                    
+                   
+                </ul>
+
+                <ul class="list-unstyled CTAs">
+                    <li><a href="index.html" class="download"><center>Logout</center></a></li>
+                    
+                </ul>
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+			       <h1>View Daily Expenses <i class="fas fa-eye"></i></h1>
+				   <p>Allow you to view monthly budget/income and every transactions (date, amount, category of expenses) that you have made.</p>
+				   
+			        <div class="container">
+					<table id="users">
+	                   <tr>
+                            <th>Bil</th>
+							<th>Budget Estimation</th>
+                            <th>Date</th>
+                            <th>Category of expenses</th>
+							<th>Other</th>
+							<th>Quantity</th>
+							<th>Price</th>
+							<th>Total Expenses</th>
+							<th>Net Expenses</th>
+							<th>Status Expenses</th>
+                        </tr>
+						<tr>
+                            <td>1</td>
+                            <td>RM 50.00</td>
+							<td>06/03/2018</td>
+                            <td>Groceries</td>
+							<td></td>
+							<td>3</td>
+							<td>RM 5.50</td>
+							<td>RM 16.50</td>
+							<td>RM 33.50</td>
+							<td>Under Limit</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>RM 500.00</td>
+							<td>11/03/2018</td>
+                            <td>Shopping</td>
+							<td></td>
+							<td>4</td>
+							<td>RM 69.00</td>
+							<td>RM 276.00</td>
+							<td>RM 224.00</td>
+							<td>Under Limit</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>RM 750.00</td>
+							<td>20/03/2018</td>
+                            <td>Other</td>
+							<td>Vacation</td>
+							<td>1</td>
+							<td>RM 800.00</td>
+							<td>RM 800.00</td>
+							<td>RM -50.00</td>
+							<td>Over Limit</td>
+                        </tr>
+						<tr>
+                            <td>4</td>
+                            <td>RM 150.00</td>
+							<td>02/04/2018</td>
+                            <td>Entertainment</td>
+							<td></td>
+							<td>3</td>
+							<td>RM 20.50</td>
+							<td>RM 61.50</td>
+							<td>RM 88.50</td>
+							<td>Under Limit</td>
+                        </tr>
+				     </table>                        
+                    </div>
+            </div>
+
+
+
+
+
+        <!-- jQuery CDN -->
+         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+         <!-- Bootstrap Js CDN -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+         <script type="text/javascript">
+             $(document).ready(function () {
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').toggleClass('active');
+                 });
+             });
+         </script>
+    </body>
+</html>
+
+

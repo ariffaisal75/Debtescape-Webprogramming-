@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Your Financial Management Solution</title>
+	<link rel="stylesheet" href="bootstrap.css">
+	<link rel="stylesheet"
+href=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css>
+<script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js>
+</script>
+<style type="text/css">
+body{
+font-family : verdana;
+background: #F0F8FF;
+}
+
+
+footer{
+padding-top : 0px;
+background : #696969;
+color: 		#f4f4f4;
+font-family : verdana;
+font-size : 14px;
+min-height : 250px;
+}
+
+
+.nav-pills {
+    color: white;    
+	background-color: #3CB371;
+}
+
+.nav-link{
+color: #f4f4f4;
+font-family : agency fb;
+
+font-size : 16pt;
+}
+
+
+nav{
+	background-color :#3CB371;
+}
+.btn-info{
+background-color: #ec624f;
+font-family : agency fb;
+font-size : 13pt;
+}
+
+.btn-info:hover {
+  background-color: #ee8d80;
+  font-family : agency fb;
+  font-size : 13pt;
+}
+
+.btn-primary{
+background-color: #ec624f;
+font-family : verdana;
+font-size : 13pt;
+border-color: #ec624f;
+}
+
+.btn-primary:hover {
+  background-color: #ee8d80;
+  font-family : verdana;
+  font-size : 13pt;
+  border-color: #ee8d80;
+}
+
+.btn-secondary{
+background-color: #6a9597;
+font-family : verdana;
+font-size : 13pt;
+border-color:#536b67;
+}
+
+.btn-secondary:hover {
+  background-color: #536b67;
+  font-family : verdana;
+  font-size : 13pt;
+  border-color: #536b67;
+  color : #e6e6e6;
+}
+
+.titletext{
+
+color : #20d06e;
+}
+
+.carousel-caption {
+    top: 75%;
+    bottom: auto;	
+}
+
+.jumbotron {
+color: white;
+background-color : #6a9597;
+}
+
+.jumbotron-fluid{
+padding-top: 15px;}
+
+.container-fluid {
+background-color : white;}
+
+.card-title{
+color : #20d06e;
+}
+
+.carousel{
+padding-bottom : 15px;
+}
+
+.pad{
+padding-top : 8px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+</style>
+
+<script>
+$("#myCarousel").carousel();
+
+// Enable Carousel Indicators
+$(".item").click(function(){
+    $("#myCarousel").carousel(1);
+});
+
+// Enable Carousel Controls
+$(".left").click(function(){
+    $("#myCarousel").carousel("prev");
+});
+
+$('.carousel').carousel({
+  interval: 2000
+})
+
+$('#myCarousel').on('slide.bs.carousel', function () {
+  // do something…
+})
+</script>
+</head>
+<body>
+	
+	<header>
+	<div class="header">
+  <!--<h1>JavaJam Coffee House</h1>-->
+</div>
+	
+	</header>
+	
+<nav>
+	<div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" 
+            data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" rel="home" href="index.html" title="">
+        <img style="max-width:125px; margin-top: -6px;"
+             src="logo light.png">
+    </a>
+</div>
+
+	<ul class="nav nav-pills nav-fill">
+  
+	 <li class="nav-item">
+    <a class="nav-link" href="about us.html">About</a></li>
+	 <li class="nav-item">
+    <a class="nav-link" href="news.html">News</a></li>
+     <li class="nav-item">
+	 <form action="user.html" class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="email" placeholder="Email" aria-label="Email">
+	  <input class="form-control mr-sm-2" type="password" placeholder="Password" aria-label="Password">
+      <button type="submit" class="btn btn-info my-2 my-sm-0" >Login</button> </a>
+    </form>
+	</ul>
+	</li>
+
+</nav>
+	
+	
+	<div class="container-fluid">
+	<main>
+	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="news1.jpg" alt="First slide">
+	  <div class="carousel-caption d-none d-md-block">
+    <h1 class="titletext">Stock-market bulls are looking for earnings to ride to the rescue</h1>
+    <p>...</p>
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="news 2.jpg" alt="Second slide">
+	  <div class="carousel-caption d-none d-md-block">
+    <h3>This violent videogame has made more money than any movie ever</h3>
+    <p>...</p>
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="news 3.jpg" alt="Third slide">
+	   <div class="carousel-caption d-none d-md-block">
+    <h3>Trump administration dials down the rhetoric on China tariffs</h3>
+    <p>...</p>
+  </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+	
+	<div class="card-deck">
+  <div class="card">
+    <img height= "400px" class="card-img-top" src="newsquare1.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h3 class="card-title">How much ammo does China have for a trade war? </h3>
+      <p class="card-text"></p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img height= "400px" class="card-img-top" src="newsquare2.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h3 class="card-title">'Black Panther' passes 'Titanic' at the box office </h3>
+      <p class="card-text"></p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img height= "400px" class="card-img-top" src="newsquare3.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h3 class="card-title">Your China-US trade fight questions, answered </h3>
+      <p class="card-text"></p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+</div>
+
+<div class="card-deck">
+  <div class="card">
+    <img height= "400px" class="card-img-top" src="newsquare1.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h3 class="card-title">How much ammo does China have for a trade war? </h3>
+      <p class="card-text"></p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img height= "400px" class="card-img-top" src="newsquare2.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h3 class="card-title">'Black Panther' passes 'Titanic' at the box office </h3>
+      <p class="card-text"></p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img height= "400px" class="card-img-top" src="newsquare3.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h3 class="card-title">Your China-US trade fight questions, answered </h3>
+      <p class="card-text"></p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+</div>
+	</main>
+	</div>
+	<footer>
+	<img src="download.png" alt="logo" class="center-block" style="margin-top:4%; max-width : 150px;"/>
+	<br><center>Copyright &copy; Debtscape
+			</center>
+	</footer>
+	
+</body>
+</html>

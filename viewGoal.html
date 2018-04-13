@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Profile</title>
+
+         <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="style4.css">
+		
+		<style type="text/css">
+		
+.btn-info {
+  color: #fff;
+  background-color: #ec624f;
+  border-color:#ec624f;
+}
+
+.btn-info:hover {
+  color: #fff;
+  background-color: #ec624f;
+  border-color:#ec624f;
+}
+
+.btn-info.disabled, .btn-info:disabled {
+  color: #fff;
+  background-color: #ec624f;
+  border-color: #ec624f;
+}
+
+.btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active,
+.show > .btn-info.dropdown-toggle {
+  color: #fff;
+  background-color: #ec624f;
+  border-color: #ec624f;
+}
+
+.btn-info:focus, .btn-info.focus {
+  box-shadow: 0 0 0 0.2rem rgba(77, 77, 77, 0.5);
+}
+
+.btn-info:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):not(.disabled).active:focus,
+.show > .btn-info.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(77, 77, 77, 0.5);
+}
+
+#users {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#users td, #users th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#users tr:nth-child(even){background-color: #f2f2f2;}
+
+#users tr:hover {background-color: #ddd;}
+
+#users th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+body{
+background-color : white;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+#content{
+background-color : #f2f2f2;
+min-width : 80%;
+margin-right : 1%;
+margin-left : 2%;
+margin-bottom : 2%;
+padding-bottom : 1%;
+
+}
+
+#head{
+margin-top : 1%;
+margin-left : 2%;
+}
+
+.container-fluid{
+margin-left : 0;
+margin-right : 0;
+padding-left : 0;
+padding-right : 0;
+width : 100%;
+
+}
+</style>
+    </head>
+    <body>
+
+
+
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+		
+                        <nav id="sidebar">
+			 
+                <div class="sidebar-header">
+                    <h3><img src="logo light.png" alt="logo" style=" max-width : 150px;" class="center-block"/> </h3> <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn center-block">
+                                <i class="glyphicon glyphicon-menu-hamburger"></i>
+                                <span></span>
+                            </button>
+                   
+                </div>
+
+                <ul class="list-unstyled components">
+                     <li>
+                        <a href="Report.html">
+                            <i class="glyphicon glyphicon-stats"></i>
+                            Track
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-certificate"></i>
+                            Goal
+                        </a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li ><a href="addGoal.html">Add Goal</a></li>
+                            <li class="active"><a href="viewGoal.html">View Goals</a></li>
+                        </ul>
+                    </li >
+                    <li >
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-pencil"></i>
+                            Update
+                        </a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li><a href="daily.html">Manage Daily Expenses</a></li>
+                            <li><a href="view.html">View Daily Expenses</a></li>
+                        </ul>
+                    </li>
+                    
+                   
+                </ul>
+
+                <ul class="list-unstyled CTAs">
+                    <li><a href="index.html" class="download"><center>Logout</center></a></li>
+                    
+                </ul>
+            </nav>
+
+            <!-- Page Content Holder -->
+             <div class="container-fluid">
+			 <div id="head">
+			       <h1>View Goals <i class="glyphicon glyphicon-check"></i></h1>
+				   <p>View all of the goals you have set </p>
+				   </div>
+				    <div id="content">
+			      
+					<form>
+						<p>Your goal:</p>
+						<table id="users">
+							<tr>
+								<th>No.</th>
+								<th>Goal</th>
+								<th>Goal Deadline</th>
+								<th>Goal Details</th>
+								<th>Goal Collected</th>
+								<th>Goal Status</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>RM 1000.00</td>
+								<td>06/03/2018</td>
+								<td>Hutang PTPTN</td>
+								<td>RM 900.00</td>
+								<td>Failed</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>RM 25000.00</td>
+								<td>24/03/2020</td>
+								<td>Duit Kawen</td>
+								<td>RM 1030.00</td>
+								<td>Pending</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>RM 1750.00</td>
+								<td>02/04/2018</td>
+								<td>PS4</td>
+								<td>RM 2000.00</td>
+								<td>Successful</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>RM 2400.00</td>
+								<td>09/04/2020</td>
+								<td>Shopping</td>
+								<td>RM 0.00</td>
+								<td>Pending</td>
+							</tr>
+						</table>
+						<script>
+							function status() {
+								var y = "Successful";
+								var n = "Failed";
+								var p = "Pending";
+								var t = "";
+								if(goalCollected > goal)
+									t = y;
+								else if(goalCollected < goal)
+									t = n;
+								else
+									t = p;
+								console.log(t);
+							}
+						</script>
+                    </form>
+					</div>
+            </div>
+
+
+
+
+
+        <!-- jQuery CDN -->
+         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+         <!-- Bootstrap Js CDN -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+         <script type="text/javascript">
+             $(document).ready(function () {
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').toggleClass('active');
+                 });
+             });
+         </script>
+    </body>
+</html>
+
+

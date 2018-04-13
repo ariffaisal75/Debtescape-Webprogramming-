@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Your Financial Management Solution</title>
+	<link rel="stylesheet" href="bootstrap.css">
+	<link rel="stylesheet"
+href=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css>
+<script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js>
+</script>
+<style type="text/css">
+body{
+font-family : verdana;
+background: #F0F8FF;
+}
+
+
+footer{
+padding-top : 0px;
+background : #696969;
+color: 		#f4f4f4;
+font-family : verdana;
+font-size : 14px;
+min-height : 250px;
+}
+
+
+.nav-pills {
+    color: white;    
+	background-color: #3CB371;
+}
+
+.nav-link{
+color: #f4f4f4;
+font-family : agency fb;
+
+font-size : 16pt;
+}
+
+
+nav{
+	background-color :#3CB371;
+}
+.btn-info{
+background-color: #ec624f;
+font-family : agency fb;
+font-size : 13pt;
+}
+
+.btn-info:hover {
+  background-color: #ee8d80;
+  font-family : agency fb;
+  font-size : 13pt;
+}
+
+.btn-primary{
+background-color: #ec624f;
+font-family : verdana;
+font-size : 13pt;
+border-color: #ec624f;
+}
+
+.btn-primary:hover {
+  background-color: #ee8d80;
+  font-family : verdana;
+  font-size : 13pt;
+  border-color: #ee8d80;
+}
+
+.btn-secondary{
+background-color: #6a9597;
+font-family : verdana;
+font-size : 13pt;
+border-color:#536b67;
+}
+
+.btn-secondary:hover {
+  background-color: #536b67;
+  font-family : verdana;
+  font-size : 13pt;
+  border-color: #536b67;
+  color : #e6e6e6;
+}
+
+.titletext{
+
+color : #20d06e;
+}
+
+.carousel-caption {
+    top: 35%;
+    bottom: auto;
+}
+
+.jumbotron {
+color: white;
+background-color : #6a9597;
+}
+
+.jumbotron-fluid{
+padding-top: 15px;}
+
+.container-fluid {
+background-color : white;}
+
+.card-title{
+color : #20d06e;
+}
+
+.carousel{
+padding-bottom : 15px;
+}
+
+.pad{
+padding-top : 8px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+</style>
+
+<script>
+$("#myCarousel").carousel();
+
+// Enable Carousel Indicators
+$(".item").click(function(){
+    $("#myCarousel").carousel(1);
+});
+
+// Enable Carousel Controls
+$(".left").click(function(){
+    $("#myCarousel").carousel("prev");
+});
+</script>
+</head>
+<body>
+	
+	<header>
+	<div class="header">
+  <!--<h1>JavaJam Coffee House</h1>-->
+</div>
+	
+	</header>
+	
+<nav>
+	<div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" 
+            data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" rel="home" href="index.html" title="">
+        <img style="max-width:125px; margin-top: -6px;"
+             src="logo light.png">
+    </a>
+</div>
+
+	<ul class="nav nav-pills nav-fill">
+	 <li class="nav-item">
+    <a class="nav-link" href="about us.html">About</a></li>
+	 <li class="nav-item">
+    <a class="nav-link" href="news.html">News</a></li>
+     <li class="nav-item">
+	 <form action="user.html" class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="email" placeholder="Email" aria-label="Email">
+	  <input class="form-control mr-sm-2" type="password" placeholder="Password" aria-label="Password">
+      <button type="submit" class="btn btn-info my-2 my-sm-0" >Login</button> </a>
+    </form>
+	</ul>
+	</li>
+
+</nav>
+	
+	
+	
+	<main>
+	<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="home-wallpaper.png" alt="First slide">
+    <div class="carousel-caption d-none d-md-block">
+    <h1 class="titletext"><strong>MAKE A WISER SPENDING PLAN<strong> </h1>
+	<p>Debtscape helps you see all your accounts at one place, understand where your money goes, reduce unwanted spending, and save for future goals.<p>
+	<a href="signup.html"> <button class="btn btn-primary my-2 my-sm-0" type="submit">Sign Up Free</button> </a>
+  </div>
+	</div>
+  </div>
+</div>
+
+<div class="container-fluid">
+<div class="card-group">
+  <div class="card">
+    <img height="400px" class="card-img-top" src="chart 1.png" alt="Card image cap">
+    <div class="card-body">
+      <h3 class="card-title">Track your spending</h3>
+      <p class="card-text">Allow you to set monthly budget/income; add, edit, delete, every transactions (date, amount, category of expenses) that you have made</p>
+    </div>
+  </div>
+  
+    <div class="card">
+    <img height="400px class="card-img-top" src="chart 3.png" alt="Card image cap">
+    <div class="card-body">
+      <h3 class="card-title">Manage your Goals</h3>
+      <p class="card-text">Set your timely goal, and keep track of your progress.</p>
+    </div>
+  </div>
+  
+    <div class="card">
+    <img  height="400px" class="card-img-top" src="chart 2.png" alt="Card image cap">
+    <div class="card-body">
+      <h3 class="card-title">Get the Best Report</h3>
+      <p class="card-text">Allows you to track the reports of your expenses and income by day/week(s)/month(s)</p>
+    </div>
+  </div>
+
+
+
+</div>
+
+</div>
+
+    <div class="pad">  
+	<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4"><center>See what’s fresh with Debtscape<center></h1>
+    <p class="lead"><center>We’ve always got something cooking to help you master your money and improve your life. See the latest, and stay tuned for big things.<center></p>
+	<a href="news.html" <button type="button" class="btn btn-secondary">News & Press Release</button></a>
+  </div>
+</div>
+</div>
+	</main>
+	
+	<footer>
+	<img src="download.png" alt="logo" class="center-block" style="margin-top:4%; max-width : 150px;"/>
+	<br><center>Copyright &copy; Debtscape
+			</center>
+	</footer>
+	
+</body>
+</html>
